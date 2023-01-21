@@ -3,18 +3,20 @@
 
 def pangram (str):
     alfabet =  'aąbcćdeęfghijklłmnńoóprsśtuwyzźż'
-    for literki in alfabet:
-       if literki not in str.lower(alfabet):
+    for literka in alfabet:
+       if literka not in str.lower():
            return False
 
        else:
-            return True
+        continue
+    
+    return True
 
 
 
-string = 'Filmuj rzeź żądań, pość, gnęb chłystków!'
+zdanie = 'Filmuj rzeź żądań, pość, gnęb chłystków!'
 
-if (pangram (str) == True):
+if (pangram (zdanie) == True):
     print ('Pangram')
 else:
     print ('Nie pangram')
